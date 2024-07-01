@@ -1,0 +1,607 @@
+:root {
+    --marginTop: 3vh;
+    --marginItens: 1vh;
+    --minWidthItens: 300px;
+    --minWidthFotos: 300px;
+    --minHeigthFotos: 300px;
+    --borderRadius: 10px;
+}
+/* Banner */
+main .banner {
+    display: block;
+
+    background-image: url("/content/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    aspect-ratio: 16/9;
+}
+
+/* Sobre */
+main .sobre {
+    display: block;
+
+    width: 70%;
+    
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .sobre h2 {
+    display: block;
+
+    text-align: center;
+}
+
+main .sobre .itens {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 1vh;
+}
+
+main .sobre .itens .item {
+    flex: 1;
+    flex-wrap: wrap;
+
+    min-width: var(--minWidthItens);
+
+    margin: var(--marginItens);
+}
+
+main .sobre .itens .imagem {
+    display: block;
+
+    background-image: url("/content/img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 4/3;
+
+    border-radius: var(--borderRadius);
+
+    transition: all 200ms ease-in-out;
+}
+
+/*
+main .sobre .itens .imagem:hover {
+    flex: 1.5;
+
+    aspect-ratio: 16/9;
+}
+*/
+
+main .sobre .itens .texto h3 {
+    color: var(--cor3);
+}
+
+/* Modalidades */
+main .modalidades {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .modalidades h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .modalidades .itens {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+main .modalidades .itens .item {
+    flex: 1;
+    flex-wrap: wrap;
+
+    margin: var(--marginItens);
+
+    min-width: var(--minWidthItens);
+    
+    aspect-ratio: 4/3;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: var(--borderRadius);
+
+    transition: all 200ms ease-in-out;
+}
+
+main .modalidades .itens .item:hover {
+    flex: 1.5;
+}
+
+main .modalidades .itens .cardio {
+    background-image: url("/content/img/cardio.jpg");
+}
+
+main .modalidades .itens .musculacao {
+    background-image: url("/content/img/musculação.jpeg");
+}
+
+main .modalidades .itens .personal {
+    background-image: url("/content/img/personal.jpeg");
+}
+
+main .modalidades .itens .item h3 {
+    display: block;
+
+    position: relative;
+
+    top: 100%;
+
+    transform: translate(0%, -100%);
+
+    width: 100%;
+
+    background-color: #00000099;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+
+    padding: 10px 0;
+
+    color: var(--cor3);
+
+    font-weight: bold;
+    font-size: 22px;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+/* Planos */
+main .planos-servicos {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .planos-servicos h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+main .planos-servicos .itens {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+main .planos-servicos .itens .item {
+    flex: 1;
+
+    flex-wrap: wrap;
+
+    min-width: var(--minWidthItens);
+
+    margin: var(--marginItens);
+
+    padding: 25px;
+
+    background-color: #00000022;
+
+    border-radius: var(--borderRadius);
+}
+
+main .planos-servicos .itens .item h3 {
+    display: inline-block;
+}
+
+main .planos-servicos .itens .item h3:last-of-type {
+    color: var(--cor3);
+}
+
+/* Fotos */
+main .fotos {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .fotos h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .fotos .itens {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+main .fotos .itens .item {
+    display: block;
+
+    flex: 1;
+    flex-wrap: wrap;
+
+    margin: var(--marginItens);
+    min-width: var(--minWidthFotos);
+    min-height: var(--minHeigthFotos);
+    
+    aspect-ratio: 4/3;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: var(--borderRadius);
+
+    transition: all 200ms ease-in-out;
+}
+
+main .fotos .itens .item:hover {
+    flex: 2;
+
+    aspect-ratio: 16/9;
+}
+
+main .fotos .itens .foto7 {
+    background-image: url("/content/img/7.jpg");
+}
+
+main .fotos .itens .foto6 {
+    background-image: url("/content/img/6.jpeg");
+}
+
+main .fotos .itens .foto5 {
+    background-image: url("/content/img/5.jpeg");
+}
+
+main .fotos .itens .foto4 {
+    background-image: url("/content/img/4.jpeg");
+}
+
+main .fotos .itens .foto3 {
+    background-image: url("/content/img/3.png");
+}
+
+main .fotos .itens .foto2 {
+    background-image: url("/content/img/2.jpg");
+}
+
+main .fotos .itens .foto1 {
+    background-image: url("/content/img/1.jpg");
+}
+
+main .fotos .itens .item button {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+main .fotos .itens .item button:hover {
+    cursor: pointer;
+}
+
+/* Equipe */
+main .equipe {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .equipe h2 {
+    display: block;
+    
+    text-align: center;
+}
+
+main .equipe .itens {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 1vh;
+}
+
+main .equipe .itens .item {
+    display: block;
+
+    flex: 1;
+    flex-wrap: wrap;
+
+    min-width: var(--minWidthItens);
+
+    margin: var(--marginItens);
+
+    min-width: none;
+
+    transition: all 200ms ease-in-out;
+}
+
+/*
+main .equipe .itens .item:hover {
+    flex: 1.5;
+}
+*/
+
+main .equipe .itens .item .foto {
+    display: block;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 4/3;
+
+    border-radius: var(--borderRadius);
+}
+
+main .equipe .itens .kleber .foto {
+    background-image: url("/content/img/kleber.jpeg");
+}
+
+main .equipe .itens .rodrigo .foto {
+    background-image: url("/content/img/rodrigo.jpg");
+}
+
+main .equipe .itens .gustavo .foto {
+    background-image: url("/content/img/gustavo.png");
+}
+
+main .equipe .itens .item .texto h3 {
+    text-align: center;
+
+    color: var(--cor3);
+}
+
+main .equipe .itens .item .texto .redes-sociais {
+    text-align: center;
+}
+
+main .equipe .itens .item .texto .redes-sociais li {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+main .equipe .itens .item .texto .redes-sociais li a {
+    display: block;
+}
+
+main .equipe .itens .item .texto .redes-sociais li a img {
+    display: block;
+
+    width: 25px;
+
+    aspect-ratio: inherit;
+}
+
+main .equipe .itens .item .texto p {}
+
+/* Contato */
+main .contato {
+    display: block;
+
+    width: 90%;
+
+    margin: auto;
+    margin-top: var(--marginTop);
+}
+
+main .contato h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .contato .itens {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 1vh;
+}
+
+main .contato .itens .item {
+    flex: 1;
+    flex-wrap: wrap;
+
+    min-width: var(--minWidthItens);
+
+    margin: 0px 10px;
+}
+
+main .contato .itens .item h3 {
+    margin-bottom: 5px;
+    
+    color: var(--cor3);
+}
+
+/* Mensagem */
+main .contato .itens .message {}
+
+main .contato .itens .message div {
+    display: block;
+
+    margin-top: 10px;
+}
+
+main .contato .itens .message div:first-of-type {
+    margin-top: 0px;
+}
+
+main .contato .itens .message div label, main .contato .itens .message div input, main .contato .itens .message div textarea {
+    display: block;
+}
+
+main .contato .itens .message div input, main .contato .itens .message div textarea {
+    border: 2px solid lightgray;
+
+    outline: none;
+
+    width: 100%;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    resize: none;
+
+    transition: all ease-in-out 200ms;
+}
+
+main .contato .itens .message div input:hover, main .contato .itens .message div textarea:hover {
+    border: 2px solid black;
+}
+
+main .contato .itens .message div input:focus, main .contato .itens .message div textarea:focus {
+    border: 2px solid black;
+}
+
+main .contato .itens .message div:last-of-type {
+    display: flex;
+
+    margin-top: 15px;
+}
+
+main .contato .itens .message div:last-of-type input {
+    display: inline-block;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    flex: 1;
+    
+    margin-right: 10px;
+
+    transition: all ease-in-out 200ms;
+}
+
+main .contato .itens .message div:last-of-type input:hover {
+    cursor: pointer;
+
+    border: 2px solid black;
+}
+
+main .contato .itens .message div:last-of-type input:last-of-type {
+    margin-right: 0px;
+}
+
+/* Redes sociais */
+main .contato .itens .redes-sociais {}
+
+main .contato .itens .redes-sociais p {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+main .contato .itens .redes-sociais p a {
+    display: block;
+}
+
+main .contato .itens .redes-sociais p a img {
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+
+    vertical-align: middle;
+}
+
+/* Foto Grande */
+.fotoGrande {
+    display: none;
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    
+    opacity: 0;
+
+    background-color: #000000aa;
+}
+
+.fotoGrande button {
+    display: block;
+
+    position: absolute;
+
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+
+    width: fit-content;
+    height: fit-content;
+
+    top: 5%;
+    right: 5%;
+}
+
+.fotoGrande button:hover {
+    cursor: pointer;
+}
+
+.fotoGrande button img {
+    display: block;
+
+    width: 20px;
+
+    aspect-ratio: 1/1;
+
+    pointer-events: none;
+}
+
+.fotoGrande .foto {
+    display: block;
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+
+    height: 75%;
+    
+    transform: translate(-50%, -50%);
+
+    background-image: url("/content/img/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    pointer-events: none;
+}

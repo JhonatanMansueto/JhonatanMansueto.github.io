@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/content/fonts/Montserrat.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url("/content/fonts/Montserrat-Italic.ttf");
+}
+
+:root {
+    --cor1: #333333;
+    --cor2: #ece2de;
+    --cor3: #ec5437;
+    --cor4: #ee7e3a;
+    --cor5: #b18680;
+    --cor6: #944c37;
+    --cor7: #e6a791;
+    --cor8: #6f6e6f;
+    --cor9: #ef2c35;
+
+    --backgroundHeader: #33333377;
+    --backgroundFooter: #ee7e3aaa;
+    --textColorHeader: white;
+    --textColorFooter: #000000;
+    --textColorHeaderHover: #ec5437;
+    --textColorFooterHover: #ec5437;
+    --margin: 3vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p, a, label, input, textarea, small {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: Montserrat-Italic, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+
+    color: black;
+}
+
+p, a, label, input, textarea, small {
+    font-size: 18px;
+}
+
+/* Header */
+header {
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+
+    background-color: var(--backgroundHeader);
+}
+
+header .header {
+    display: block;
+    
+    clear: both;
+    overflow: hidden;
+
+    margin: auto;
+    padding: 0px;
+
+    width: 90%;
+}
+
+header .header .menu {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+header .header .menu ul {
+    display: block;
+}
+
+header .header .menu ul li {
+    display: inline-block;
+    
+    vertical-align: middle;
+
+    margin-right: 2vh;
+}
+
+header .header .menu ul li:first-of-type {
+    margin-right: 5vw;
+}
+
+header .header .menu ul li:last-of-type {
+    margin-right: 0;
+}
+
+header .header .menu ul li a {
+    display: block;
+
+    font-weight: bold;
+
+    border: 2px solid transparent;
+
+    color: var(--textColorHeader);
+}
+
+header .header .menu ul li:first-of-type a {
+    border: none;
+}
+
+header .header .menu ul li a:hover {
+    color: var(--textColorHeaderHover);
+
+    border-bottom-color: var(--textColorHeaderHover);
+    
+    transition: all 200ms ease-in-out;
+}
+
+header .header .menu ul li a img {
+    display: block;
+
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--backgroundFooter);
+
+    margin-top: var(--margin);
+    padding: 3vh 0;
+}
+
+footer .footer {
+    clear: both;
+    overflow: hidden;
+
+    display: block;
+
+    margin: auto;
+
+    width: 90vw;
+}
+
+footer .footer .menus {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+footer .footer .menus .menu {
+    flex: 1;
+
+    margin-right: 5%;
+}
+
+footer .footer .menus .menu:last-of-type {
+    margin-right: 0;
+}
+
+footer .footer .menus .menu h3 {
+    font-size: 22px;
+
+    text-align: center;
+
+    color: var(--textColorFooter);
+}
+
+footer .footer .menus .menu p {
+    color: var(--textColorFooter);
+}
+
+footer .footer .menus .menu a {
+    color: var(--textColorFooter);
+}
+
+footer .footer .menus .menu a img {
+    width: 25px;
+
+    vertical-align: middle;
+}
+
+footer .footer .copyright {
+    float: left;
+    display: block;
+}
+
+footer .footer .copyright p {
+    font-weight: bold;
+    color: var(--textColorFooter);
+}
+
+footer .footer .social-links {
+    float: right;
+
+    display: block;
+}
+
+footer .footer .social-links p {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+footer .footer .social-links p a {
+    display: block;
+}
+
+footer .footer .social-links p a img {
+    display: block;
+
+    width: 25px;
+}
