@@ -1,0 +1,236 @@
+main {}
+
+/* Header */
+header {
+    background-image: url("/content/img/banners/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Banners Textos */
+main .bannerTexto {
+    display: block;
+
+    margin-top: var(--marginItens);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+main .bannerTexto:first-of-type {
+    margin-top: 90px;
+}
+
+main .bannerFeiraSaude {
+    background-image: url("/content/img/banners/bannerProjetoVida10.jpg");
+}
+
+main .bannerTexto .background {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--backgroundBannerTextos);
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+main .bannerTexto .background .texto {
+    display: block;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin: auto;
+}
+
+main .bannerTexto .background .texto h2 {
+    color: var(--textColorBanner2);
+    text-transform: uppercase;
+
+    padding: 40px 20px;
+}
+
+/* Fotos */
+main .itens {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+main .itens .item {
+    flex: 1;
+    flex-wrap: wrap;
+
+    margin: var(--marginItens) auto;
+
+    width: fit-content;
+    max-width: min-content;
+    min-width: 400px;
+
+    aspect-ratio: 4/3;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .itens .item button {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+
+    transition: 200ms all ease-in-out;
+}
+
+main .itens .item button:hover {
+    cursor: pointer;
+
+    background-color: #00000055;
+}
+
+main .itens .foto01 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/01.jpg");
+}
+
+main .itens .foto02 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/02.jpg");
+}
+
+main .itens .foto03 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/03.jpg");
+}
+
+main .itens .foto04 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/04.jpg");
+}
+
+main .itens .foto05 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/05.jpg");
+}
+
+main .itens .foto06 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/06.jpg");
+}
+
+main .itens .foto07 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/07.jpg");
+}
+
+main .itens .foto08 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/08.jpg");
+}
+
+main .itens .foto09 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/09.jpg");
+}
+
+main .itens .foto10 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/10.jpg");
+}
+
+main .itens .foto11 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/11.jpg");
+}
+
+main .itens .foto12 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/12.jpg");
+}
+
+main .itens .foto13 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/13.jpg");
+}
+
+main .itens .foto14 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/14.jpg");
+}
+
+main .itens .foto15 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/15.jpg");
+}
+
+main .itens .foto16 {
+    background-image: url("/content/img/projetos/feiraDeSaudeUnasp2022/16.jpg");
+}
+
+/* Foto Grande */
+.fotoGrande {
+    display: none;
+
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    
+    opacity: 0;
+
+    background-color: #000000aa;
+}
+
+.fotoGrande button {
+    display: block;
+
+    position: absolute;
+
+    background-color: transparent;
+    border: none;
+
+    width: 30px;
+    height: 30px;
+
+    top: 5%;
+    right: 5%;
+}
+
+.fotoGrande button:hover {
+    cursor: pointer;
+}
+
+.fotoGrande button img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.fotoGrande .foto {
+    display: block;
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+
+    max-width: 75vw;
+    max-height: 75vh;
+
+    transform: translate(-50%, -50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    object-fit: cover;
+    object-position: center;
+
+    pointer-events: none;
+}

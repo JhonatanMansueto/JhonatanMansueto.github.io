@@ -1,0 +1,39 @@
+main {}
+
+main .emBreve {
+    display: block;
+
+    margin-top: 90px;
+
+    aspect-ratio: 21/9;
+
+    width: 100%;
+}
+
+main .emBreve .textoEmBreve {
+    display: block;
+
+    width: fit-content;
+    max-width: fit-content;
+
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main .emBreve .textoEmBreve h2 {
+    display: block;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+main .emBreve .textoEmBreve p {
+    display: block;
+
+    width: fit-content;
+}

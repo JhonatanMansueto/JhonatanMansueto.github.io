@@ -1,0 +1,195 @@
+main {}
+
+/* Header */
+header {
+    background-image: url("/content/img/banners/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Banners Textos */
+main .bannerTexto {
+    display: block;
+
+    margin-top: var(--marginItens);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+main .bannerTexto:first-of-type {
+    margin-top: 90px;
+}
+
+main .bannerRealityUnasp {
+    background-image: url("/content/img/banners/bannerRealityUnasp.jpg");
+}
+
+main .bannerTexto .background {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--backgroundBannerTextos);
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+main .bannerTexto .background .texto {
+    display: block;
+
+    width: fit-content;
+    height: fit-content;
+
+    margin: auto;
+}
+
+main .bannerTexto .background .texto h2 {
+    color: var(--textColorBanner2);
+    text-transform: uppercase;
+
+    padding: 40px 20px;
+}
+
+/* Flex */
+main .itens {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    width: 90%;
+
+    margin: var(--marginItens) auto;
+}
+
+main .itens .item {
+    display: block;
+    flex: 1;
+}
+
+/* Reality Unasp */
+main .realityUnasp .item {
+    padding: var(--marginItens);
+}
+
+main .realityUnasp .logo {
+    border-radius: 10px;
+}
+
+main .realityUnasp .logo img {
+    display: block;
+
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+/* Participantes */
+main .participantes .item {
+    padding: var(--marginItens);
+
+    width: fit-content;
+    min-width: 200px;
+
+    margin: auto;
+}
+
+main .participantes .item img {
+    display: block;
+
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+/* Parceiros */
+main .parceiros .item {
+    padding: var(--marginItens);
+
+    width: fit-content;
+    min-width: 200px;
+
+    margin: auto;
+}
+
+main .parceiros .item img {
+    display: block;
+
+    width: 100%;
+}
+
+/* Videos */
+main .videos {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+main .videos .item {
+    flex: 1;
+
+    min-width: 250px;
+    width: fit-content;
+    max-width: min-content;
+
+    margin: var(--marginItens) auto;
+
+    padding: 5px;
+}
+
+main .videos .item a {
+    text-align: center;
+    vertical-align: middle;
+
+    display: flex;
+
+    justify-content: end;
+    align-items: end;
+
+    margin: 10px;
+
+    width: 100%;
+    height: 100%;
+    
+    aspect-ratio: 1/1;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 10px;
+}
+
+main .videos .item a p {
+    display: block;
+
+    width: 100%;
+
+    padding: 10px 0px;
+
+    background-color: var(--backgroundTextoTreinos);
+
+    border-radius: 10px;
+}
+
+main .videos .item .ep01 {
+    background-image: url("/content/img/projetos/reality40DiasUnaspIgrejaHT/videos/ep01.jpg");
+}
+
+main .videos .item .ep02 {
+    background-image: url("/content/img/projetos/reality40DiasUnaspIgrejaHT/videos/ep01.jpg");
+}
+
+main .videos .item .ep03 {
+    background-image: url("/content/img/projetos/reality40DiasUnaspIgrejaHT/videos/ep01.jpg");
+}
